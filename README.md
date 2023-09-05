@@ -1,52 +1,86 @@
-# Mouzikty Music Player
 
-![Mouzikty Logo](logo.png)
+# Mouzikty 
 
-Mouzikty is a modern and user-friendly music player application built with PyQt5 and MySQL for seamless user authentication. It provides an intuitive interface for music playback, playlist management, and user account registration. Enjoy your favorite tunes hassle-free with features like shuffling, repeating, and a history of your recently played songs.
+Mouzikty is a 100% Tunisian versatile and user-friendly music player application built using Python and the PyQt5 framework. It empowers music enthusiasts to enjoy their favorite tunes, organize playlists, and manage their digital music libraries seamlessly. With its intuitive interface and a host of features, Mouzikty provides a rich music listening experience.
 
-## Table of Contents
 
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation and Usage](#installation-and-usage)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## Key Features
+### 1. User Authentication and Registration
 
-## Features
+Mouzikty includes a secure login system, allowing registered users to access their personalized music libraries.
+New users can easily register by creating an account with a unique username and password.
 
-- **User Authentication:** Securely log in to your personalized music experience. Your playlists are just a login away.
+### 2. Playlist Management
 
-- **Local Music Playback:** Play your favorite songs from your local music library with ease.
+Users can create, load, and save playlists to curate their music collections.
+Playlists offer a convenient way to organize songs for different moods, occasions, or genres.
 
-- **Dynamic Playlists:** Create, manage, and save playlists effortlessly.
+### 3. Playback Control
 
-- **Enhanced Playback Controls:** Control your music with play, pause, next, and previous track functions.
+Mouzikty offers standard music playback controls, including play, pause, next track, and previous track.
+Users can adjust the volume using an intuitive slider to suit their preferences.
 
-- **Shuffle and Repeat:** Customize your listening experience with the ability to shuffle your playlist or repeat your favorite tracks.
+### 4. Shuffle and Repeat Modes
 
-- **Volume Control:** Adjust the volume to your liking with the user-friendly slider.
+Users can toggle the shuffle mode to randomize the playback order, adding an element of surprise to their music experience.
+The repeat mode allows for continuous playback of a single track or the entire playlist.
 
-- **Password Strength Indicator:** Ensure a strong password during registration with our built-in password strength meter.
+### 5. Recently Played Songs
 
-- **Recent Play History:** Quickly access your recently played songs for an improved listening experience.
+Mouzikty keeps track of the recently played songs, making it easy for users to revisit their favorite tracks.
+The history feature displays the most recently played songs in a user-friendly menu.
 
-## Prerequisites
+### 6. Keyboard Shortcuts
 
-Before running Mouzikty, ensure you have the following installed:
+For efficiency, Mouzikty includes keyboard shortcuts for common actions like play/pause and navigating tracks.
+## Requirements
+Before using Mouzikty, ensure you have the following dependencies installed on your system:
 
-- **Python 3.x**
-- **PyQt5**
-- **PyQt5 Multimedia**
-- **PyQt5 QtMultimediaWidgets**
-- **PyQt5 QtMultimedia**
-- **PyQt5 QtSql**
-- **MySQL Connector**
-- **MySQL Server:** Install and configure a MySQL server with appropriate user and database setup.
+Python 3
 
-## Installation and Usage
+PyQt5
 
-1. **Clone the Mouzikty repository to your local machine:**
+PyQt5 Multimedia
 
-   ```bash
-   git clone <repository_url>
+MySQL Connector (for database operations)
+
+Additional libraries may be required for image handling, depending on your setup.
+
+
+## How To Run
+
+Follow these steps to run Mouzikty on your machine:
+
+Clone this repository to your local computer.
+
+Open a terminal or command prompt and navigate to the project directory.
+
+Install the required dependencies using pip:
+
+```bash
+pip install PyQt5 PyQt5Multimedia mysql-connector-python
+```
+Set up your MySQL database. You can use a tool like `phpMyAdmin` or any `MySQL` management tool to create a database named mouzikty and a table named users with columns `username` and `password`. Update the database connection details in the code as necessary.
+
+Run the main application:
+
+```bash
+python main.py
+```
+
+The login window will appear. You can use the provided login credentials or register a new account.
+
+After logging in, the main music player window will open. You can start adding music to your playlist and enjoy your favorite songs!
+
+### Ps: Dont forget to change the host , user , password and database variables in the code 
+
+
+## Authors
+
+- Mouzikty was created by [@OmarBelll](https://github.com/OmarBelll) and is open-source. Contributions and improvements are welcome from the community.
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at omarbellolxd@gmail.com
+
