@@ -65,7 +65,7 @@ Set up your MySQL database. You can use a tool like `phpMyAdmin` or any `MySQL` 
 Run the main application:
 
 ```bash
-python main.py
+python main_with_login.py
 ```
 
 The login window will appear. You can use the provided login credentials or register a new account.
