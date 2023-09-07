@@ -114,10 +114,10 @@ class LoginWindow(QDialog):
         self.setLayout(layout)
 
         self.db_connection = mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='98336542',
-            database='mouzikty'
+            host='',
+            user='',
+            password='',
+            database=''
         )
         self.cursor = self.db_connection.cursor()
 
